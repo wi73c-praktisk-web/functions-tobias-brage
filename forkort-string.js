@@ -3,8 +3,8 @@ var article = "Lorem ipsum dolor sit amet, wisi faucibus. Leo vehicula, malesuad
 function shortArticle(rArticle, rLength) {
     var rArticleLen = rArticle.length;
     if(rArticleLen > rLength) {
-        article = rArticle.slice(0, rLength);
-        console.log(article);
+        article = rArticle.substr(0, rLength);
+        console.log(article + '...');
     } else {
         console.log(rArticle);
     }
